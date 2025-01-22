@@ -1,0 +1,22 @@
+@Programa Fonte UFC
+#reconhece um palindromo
+fita 101
+init q0
+accept qf
+#reject qr
+
+q0,1,q1,_,>
+q0,0,q2,_,>
+q0,_,qf,_,>
+q1,1,q1,1,>
+q1,0,q1,0,>
+q1,_,q3,_,<
+q2,1,q2,1,>
+q2,0,q2,0,>
+q2,_,q4,_,<
+q3,1,q0,_,<
+q3,_,qf,_,>
+q3,0,qr,_,>
+q4,0,q0,_,<
+q4,_,qf,_,>
+q4,1,qr,_,>
